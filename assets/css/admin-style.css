@@ -1,0 +1,60 @@
+/* Admin styles for Exclude From Search plugin */
+
+.tab-panel {
+    margin-top: 10px;
+}
+
+/* Search box styling */
+.search-box {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.search-box input[type="search"] {
+    margin-right: 4px;
+    padding: 3px 5px;
+}
+
+/* Table styling */
+.wp-list-table {
+    margin-top: 10px;
+}
+
+.check-column {
+    width: 2.2em;
+    padding: 11px 0 0 3px !important;
+}
+
+.tablenav{
+    height: 0px !important;
+}
+
+.tablenav .page-numbers{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.tablenav-pages {
+    float: right;
+    margin-bottom: 10px;
+}
+
+/* Clear float after navigation */
+.tablenav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.search-form{
+    width: 100%;
+}
+
+.search-form .button{
+    padding: 3px 20px;
+}
+
+.exclusion-form .button{
+    margin-top: 15px;
+    padding: 3px 20px;
+}
