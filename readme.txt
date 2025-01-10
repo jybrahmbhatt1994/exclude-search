@@ -1,7 +1,6 @@
 === Exclude Search ===
-Contributors: Jainish Brahmbhatt
+Contributors: jyb1603
 Tags: exclude, search
-Requires at least: 6.1.7
 Tested up to: 6.7
 Stable tag: 1.0.0
 License: GPLv2 or later
