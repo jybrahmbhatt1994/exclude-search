@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1544" height="500" viewBox="0 0 1544 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2D1B69;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1E4D92;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- Animated gradient for paths -->
+        <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)"/>
+            <stop offset="50%" style="stop-color:rgba(255,255,255,0.2)"/>
+            <stop offset="100%" style="stop-color:rgba(255,255,255,0.1)"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Main background -->
+    <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+
+    <!-- Creative Network Pattern -->
+    <!-- Network nodes -->
+    <g id="network-nodes">
+        <circle cx="200" cy="100" r="4" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="400" cy="150" r="3" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="600" cy="80" r="5" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="800" cy="120" r="4" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="1000" cy="90" r="3" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="1200" cy="140" r="4" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="1400" cy="110" r="5" fill="rgba(255,255,255,0.3)"/>
+        
+        <circle cx="300" cy="350" r="4" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="500" cy="380" r="3" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="700" cy="400" r="5" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="900" cy="370" r="4" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="1100" cy="390" r="3" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="1300" cy="360" r="4" fill="rgba(255,255,255,0.3)"/>
+    </g>
+
+    <!-- Interconnected paths -->
+    <g id="network-paths" stroke="url(#flowGradient)" stroke-width="1.5">
+        <!-- Upper curve -->
+        <path d="M0,100 C200,80 400,120 600,90 S800,60 1000,100 S1200,140 1544,100" 
+              fill="none" opacity="0.3"/>
+        <!-- Lower curve -->
+        <path d="M0,350 C300,380 600,320 900,350 S1200,380 1544,350" 
+              fill="none" opacity="0.3"/>
+        <!-- Vertical connections -->
+        <path d="M200,100 L300,350" fill="none" opacity="0.2"/>
+        <path d="M600,80 L700,400" fill="none" opacity="0.2"/>
+        <path d="M1000,90 L1100,390" fill="none" opacity="0.2"/>
+        <path d="M1400,110 L1300,360" fill="none" opacity="0.2"/>
+        
+        <!-- Diagonal connections -->
+        <path d="M400,150 Q600,250 500,380" fill="none" opacity="0.2"/>
+        <path d="M800,120 Q900,250 900,370" fill="none" opacity="0.2"/>
+        <path d="M1200,140 Q1100,250 1100,390" fill="none" opacity="0.2"/>
+    </g>
+
+    <!-- Floating geometric shapes -->
+    <g id="geometric-accents" fill="rgba(255,255,255,0.05)">
+        <polygon points="100,200 150,250 100,300 50,250" />
+        <polygon points="1400,150 1450,200 1400,250 1350,200" />
+        <rect x="700" y="450" width="40" height="40" transform="rotate(45 720 470)" />
+        <rect x="1200" y="300" width="30" height="30" transform="rotate(30 1215 315)" />
+    </g>
+
+    <!-- Main search circle - moved up -->
+    <circle cx="772" cy="200" r="100" fill="none" 
+            stroke="#4CAF50" stroke-width="8" 
+            filter="url(#glow)"/>
+
+    <!-- Excluded items visualization - moved up and made smaller -->
+    <g transform="translate(772,200)">
+        <circle r="60" fill="none" stroke="#FF5252" stroke-width="3" stroke-dasharray="8,4"/>
+        <line x1="-40" y1="-40" x2="40" y2="40" stroke="#FF5252" stroke-width="3"/>
+        <line x1="40" y1="-40" x2="-40" y2="40" stroke="#FF5252" stroke-width="3"/>
+    </g>
+
+    <!-- Plugin name -->
+    <text x="772" y="350" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="40" 
+          font-weight="bold" fill="white">
+        Exclude Search
+    </text>
+
+    <!-- Tagline - smaller font -->
+    <text x="772" y="390" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="16" 
+          fill="rgba(255,255,255,0.9)">
+        Precision Control for WordPress Search Results
+    </text>
+</svg>
