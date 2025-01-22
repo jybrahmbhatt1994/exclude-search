@@ -115,6 +115,19 @@ class Exclude_From_Search
             '1.0.0',
             'all'
         );
+
+        wp_enqueue_script(
+            'exclude-search-custom',
+            plugins_url('assets/js/custom.js', __FILE__),
+            array('jquery'),
+            '1.0.0',
+            true
+        );
+
+        // Add nonce for security
+        wp_localize_script('exclude-search-custom', 'excludesearchcustomAjax', array(
+            'nonce' => wp_create_nonce('excludesearch_nonce')
+        ));
     }
 
     /**
