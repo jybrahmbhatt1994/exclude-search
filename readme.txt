@@ -78,5 +78,5 @@ Initial release. No upgrade needed.
 
 == Support ==
 
-For support or questions, please visit the plugin support forum on WordPress.org or contact the plugin author.
+For support or questions, please visit the [Plugin's Support Forum](https://wordpress.org/support/plugin/exclude-search/) on WordPress.org.
 
