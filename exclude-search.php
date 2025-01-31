@@ -3,8 +3,8 @@
 /**
  * Plugin Name: Exclude Search
  * Plugin URI: https://github.com/jybrahmbhatt1994/exclude-search
- * Description: Exclude post(s), page(s), product(s) or custom post(s) from WordPress search results.
- * Version: 1.0.1
+ * Description: Exclude posts, pages, products or custom posts from WordPress search results.
+ * Version: 1.0.2
  * Author: Jainish Brahmbhatt
  * Author URI: https://jainishbrahmbhatt.wordpress.com/
  * License: GPL v2 or later

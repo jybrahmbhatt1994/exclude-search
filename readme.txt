@@ -1,12 +1,12 @@
 === Exclude Search ===
-Contributors: jyb1603, beauplayground
+Contributors: jyb1603
 Tags: exclude post, exclude page, hide from search, exclude from search, search exclude
 Tested up to: 6.7
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Exclude post(s), page(s), product(s) or custom post(s) from WordPress search results.
+Exclude posts, pages, products or custom posts from WordPress search results.
 
 == Description ==
 
@@ -15,9 +15,9 @@ This plugin provides an intuitive admin interface where you can manage the exclu
 
 == Features ==
 
-- Exclude specific posts/pages/custom post types from WordPress search results.
+- Exclude posts, pages, custom post types from WordPress search results.
 - Exclude WooCommerce products from search results (if WooCommerce is installed).
-- Easy-to-use admin interface for managing excluded items.
+- Easy-to-use admin interface for selecting items to exclude.
 - Option to search through posts, pages, and custom post types in the admin panel.
 - Pagination support for large datasets.
   
@@ -53,6 +53,10 @@ Yes, if you have WooCommerce installed, you can exclude products from search res
 If you remove a post from the excluded list, it will appear in the search results again.
 
 == Changelog ==
+
+= 1.0.2 - 2025-01-31 =
+* Change: Updated plugin icon.
+* Change: Updated name in admin menu.
 
 = 1.0.1 - 2025-01-22 =
 * Fix: "No Posts found." error after paginating.
