@@ -1,0 +1,27 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_764_2)">
+    <path d="M186.033 4H31.2787C19.5268 4 10 13.5268 10 25.2787V230.328C10 242.08 19.5268 251.607 31.2787 251.607H186.033C197.785 251.607 207.312 242.08 207.312 230.328V25.2787C207.312 13.5268 197.785 4 186.033 4Z" fill="white" stroke="#2B3F51" stroke-width="9"/>
+    <path d="M46.7544 54.2949H170.558" stroke="#A5B5C5" stroke-width="5"/>
+    <path d="M46.7544 91.0493H170.558" stroke="#A5B5C5" stroke-width="5"/>
+    <path d="M46.7544 127.804H170.558" stroke="#A5B5C5" stroke-width="5"/>
+    <path d="M46.7544 164.558H170.558" stroke="#A5B5C5" stroke-width="5"/>
+    <path d="M46.7544 201.312H170.558" stroke="#A5B5C5" stroke-width="5"/>
+    
+    <!-- Grouping the magnifier for animation -->
+    <g id="magnifier">
+      <path d="M178.295 218.722C203.936 218.722 224.722 197.936 224.722 172.295C224.722 146.655 203.936 125.869 178.295 125.869C152.655 125.869 131.869 146.655 131.869 172.295C131.869 197.936 152.655 218.722 178.295 218.722Z" fill="white" stroke="#3498DB" stroke-width="9"/>
+      <path d="M211.18 205.18L246 240" stroke="#3498DB" stroke-width="9" stroke-linecap="round"/>
+      <path d="M162.82 156.82L193.771 187.771" stroke="#E74C3C" stroke-width="5" stroke-linecap="round"/>
+      <path d="M193.771 156.82L162.82 187.771" stroke="#E74C3C" stroke-width="5" stroke-linecap="round"/>
+      
+      <!-- Animation to move left, up, right, and back down with -30px -->
+      <animateTransform attributeName="transform" type="translate" values="0,0; -30,0; -30,-30; 0,-30; 0,0" dur="4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <defs>
+    <clipPath id="clip0_764_2">
+      <rect width="256" height="256" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

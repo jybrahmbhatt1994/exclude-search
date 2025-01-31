@@ -87,8 +87,8 @@ class Exclude_From_Search
     public function add_admin_menu()
     {
         add_menu_page(
-            __('Exclude From Search', 'exclude-search'),
-            __('Exclude From Search', 'exclude-search'),
+            __('Exclude Search', 'exclude-search'),
+            __('Exclude Search', 'exclude-search'),
             'manage_options',
             'exclude-search',
             array($this, 'display_admin_page'),
